@@ -1,0 +1,151 @@
+body {
+  background-color: #f2faff;
+}
+.navbar {
+  position: absolute;
+  background-color: #f2faff;
+  width: 100%;
+  z-index: 10;
+  border-bottom: 1px solid red; /*rgba(255, 255, 255, 0.3)*/
+}
+.bg-img {
+  height: 1000px;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+.searchbar {
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  width: 100%;
+}
+.nav-link {
+  /*color: blue;*/
+  margin-right: 5px;
+}
+
+#login {
+  border: 2px solid black;
+  padding: 0.2rem 1rem;
+  border-radius: 8px;
+  line-height: 30px;
+}
+#signup {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 0.2rem 1rem;
+  margin-left: 15px;
+  line-height: 30px;
+}
+#login:hover {
+  background-color: #98d505;
+}
+#signup:hover {
+  background-color: #98d505;
+}
+
+.input-group > .form-control:hover {
+  box-shadow: none;
+}
+.input-group > .form-control {
+  margin-right: 5px;
+}
+#btn-outline-secondary {
+  border-left: 1px solid #000;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+#btn-outline-secondary:hover {
+  background-color: green;
+}
+#btn-outline-secondary:focus {
+  box-shadow: none;
+}
+.carousel-inner {
+  height: 100vh;
+}
+#offcanvas-header {
+  display: none;
+}
+.creatorcontainer {
+  display: flex;
+  margin-left: 200px;
+  background-color: #92e3a9;
+}
+.imagecontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.containeerimage {
+  display: flex;
+  margin-left: 20px;
+}
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+.creatortag {
+  display: flex;
+}
+.tagImage {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.card-body {
+  border-radius: 8px;
+}
+#cardsbody {
+  border: 3px solid #66802b;
+}
+.cardbutton {
+  color: #98d505;
+}
+/*mobile responsiveness */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+}
+@media only screen and (max-width: 768px) {
+  #smallscreen {
+    display: none;
+  }
+  form {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+  form input {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .carousel-inner {
+    height: auto;
+  }
+  form {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #offcanvas-header {
+    display: block;
+  }
+  #navbarNav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #000;
+    transition: visibility 0.2s ease-in-out;
+  }
+}
+@media only screen and (max-width: 1200px) {
+}

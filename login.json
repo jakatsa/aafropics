@@ -1,0 +1,14 @@
+[
+  {
+    "status": "success",
+    "message": "Login successful",
+    "data": {
+      "username": "exampleUser",
+      "token": "yourAuthToken"
+    }
+  },
+  {
+    "status": "error",
+    "message": "Invalid credentials"
+  }
+]
